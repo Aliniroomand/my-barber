@@ -1,0 +1,65 @@
+/*!______ style is .... part  ______ */
+    /*!1- rest styles  */
+
+
+
+
+/* !________1- rest styles__________ */
+:root{
+    --background-main:radial-gradient(circle, rgba(108,59,0,1) 11%, rgba(181,111,0,1) 45%, rgba(223,140,73,1) 72%, rgba(255,177,119,1) 97%);
+    --background-women:linear-gradient(0deg, rgba(0,3,57,0.727328431372549) 48%, rgba(0,241,255,1) 100%);
+    --background-men:linear-gradient(0deg, rgba(0,3,57,0.727328431372549) 48%, rgba(0,241,255,1) 100%);
+    --main-font:var(--main-font)
+}
+@font-face {
+    font-family: mainfont;
+    src: url(./fonts/A\ Hayat.ttf);
+}
+
+body{
+    background:url(./images/pngtree-black-gold-pattern-background-picture-image_634890.jpg);
+    background-size:cover;
+    background-size: auto;
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.ask-gender h1 , .ask-gender{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    align-items: center;
+    margin:0;
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px rgba(249, 249, 249, 0.438);
+    font-family:mainfont ;
+    font-weight: 600;
+    font-size: 2.5rem;
+line-height: 30px;
+}
+.choosing-at-first{
+    width:200px;
+    height:300px ;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.416),inset -50px -50px 2px rgb(255, 0, 0);
+    border-radius: 30px;
+    /* left: calc( 50% - 200px); */
+}
+.choosing-at-first:hover{
+filter: contrast(150%);
+transform:scale(1.2);
+cursor: pointer;
+transition: 1s ;
+box-shadow: 30px 30px 2px rgba(0, 0, 0, 0.512),40px 40px 5px rgb(68, 68, 68);
+}
+.dissapear-choose-gender{
+    transition:1.5s;
+
+}
+.animateForLoading-men{
+    border-radius: 800%;
+    display: none;
+}
+
