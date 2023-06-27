@@ -14,17 +14,18 @@
     console.log(event.target.className)
      if( classOfSelected === "choosing-at-first-men"){
         selectWomanGender.className=("dissapear-notchoosen-gender")  
-        console.log(selectManGender.className)
+        loadingMen.style.display="block"
 
         }
         if(classOfSelected === "choosing-at-first-women"){
             
          selectManGender.className=("dissapear-notchoosen-gender")  
+         loadingWomen.style.display="block";
 
    
            }
 }
 //2-for loading
-const loadingMen=document.querySelector(".loading-title-men");
-loadingMen.style.display="none";
+const loadingWomen=document.querySelector(".loading-women");
+const loadingMen=document.querySelector(".loading-men");
 
