@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "SquadFont";
+    src: url(./fonts/SquadFont.ttf);
+}
+:root{
+    --textColor:rgb(212, 150, 100);
+}
+
+.men-services{
+    box-sizing: border-box;
+    width:320px;
+    height: 480px;
+    background-position: center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-image: url(./images/men-services-BG.jpg);
+    position:relative ;
+    top: calc( 50% - 240px) ;
+    left: calc( 50% - 160px);
+    font-family: "SquadFont";
+}
+.men-services li{
+    padding:5px 0;
+    list-style-type: none;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--textColor);
+    text-shadow: 2px 2px 4px  rgb(9, 5, 0),-2px -2px 2px rgb(0, 0, 0);
+}
+.hair-services{
+    left: -20px;
+}
+.men-services li:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+    box-shadow:  2px 2px 3px black, inset -2px -2px 3px white;
+    border-radius: 50%;
+    transition: .2s;
+}
+.men-services li:not(hover){
+}
