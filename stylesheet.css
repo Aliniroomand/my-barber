@@ -44,7 +44,7 @@ line-height: 30px;
 .choosing-at-first-men , .choosing-at-first-women{
     width:200px;
     height:300px ;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.416),inset -50px -50px 2px rgb(255, 0, 0);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.416);
     border-radius: 30px;
 }
 .choosing-at-first-men:hover ,.choosing-at-first-women:hover{
@@ -55,34 +55,34 @@ transition: 1s ;
 box-shadow: 30px 30px 2px rgba(0, 0, 0, 0.512),40px 40px 5px rgb(68, 68, 68);
 }
 .dissapear-notchoosen-gender{
-display: none
-;
-
+display: none;
 }
-.container-of-loadin-part{
-    position: relative;
-    top: -480px;
-
-}
-
 .animateForLoading-men {
     border-radius: 800%;
-    position:absolute;
-    z-index: 1;
-    
-}
-.loading-title{
-    z-index: 2;
     position: absolute;
-    top: 400px;
-    left: 100px;
+    z-index: 1;
+
 }
-.loading-women{
-    margin-inline: -30px;
+
+.loading-men {
     display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 30%;
+
 }
-.loading-men{
-    margin-inline: 50px;
-    display: none;
+
+
+
+
+/* animations */
+@keyframes goAndDisappear{
+from{
+        }
+
+    to{transform: scale(1.3);
+        opacity: 0;
+        }
 }
 
